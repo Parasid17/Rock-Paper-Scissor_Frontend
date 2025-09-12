@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+}
+
+#container_1 {
+    /* border: 2px solid black; */
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.choice {
+    height: 350px;
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#result {
+    height: 350px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#result_text {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+
+
+
+/* #container_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    font-family: monospace;
+} */
+
+#score_board {
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 24px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 48px;
+    font-family: monospace;
+}
+
+
+#container_3 {
+    /* height: fit-content; */
+    width: 100%;
+    margin-top: 48px;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px;
+    /* font-family: "Roboto Slab", serif; */
+    /* background-color: aqua; */
+}
+
+.rps_options {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+}
+
+.main_container_rps {
+    height: fit-content;
+    display: flex;
+}
+
+.rps_img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+.rps_img:hover {
+    cursor: pointer;
+    border: 5px solid green;
+    transition: border 0.1s;
+}
+
+
+
+.btn {
+    text-align: center;
+    margin: 8px 0px;
+}
+
+button {
+    padding: 8px 32px;
+    font-size: 24px;
+    border-radius: 30px;
+    word-spacing: 8px;
+}
+
+
+
+
+/* .rps {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-decoration: underline;
+} */
