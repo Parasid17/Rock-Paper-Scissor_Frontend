@@ -8,8 +8,9 @@ body {
     font-family: "Roboto Slab", serif;
 }
 
+
+/* ---- Container 1 ---- */
 #container_1 {
-    /* border: 2px solid black; */
     margin-top: 32px;
     display: flex;
     justify-content: space-evenly;
@@ -20,11 +21,17 @@ body {
     width: 450px;
     border: 1px solid black;
     border-radius: 20px;
+    overflow: hidden;
 }
+.choice img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 #result {
     height: 350px;
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -40,15 +47,6 @@ body {
     font-weight: 600;
 }
 
-
-
-/* #container_2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-    font-family: monospace;
-} */
-
 #score_board {
     width: 200px;
     border: 1px solid black;
@@ -63,8 +61,9 @@ body {
 }
 
 
-#container_3 {
-    /* height: fit-content; */
+
+/* ---- Container 2 ---- */
+#container_2 {
     width: 100%;
     margin-top: 48px;
     border-top: 2px solid black;
@@ -72,8 +71,6 @@ body {
     flex-direction: row;
     justify-content: center;
     padding: 16px;
-    /* font-family: "Roboto Slab", serif; */
-    /* background-color: aqua; */
 }
 
 .rps_options {
@@ -91,7 +88,6 @@ body {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin-bottom: 8px;
     object-fit: cover;
 }
 
@@ -103,26 +99,23 @@ body {
 
 
 
+/* ---- Reset Button ---- */
 .btn {
     text-align: center;
     margin: 8px 0px;
 }
 
 button {
-    padding: 8px 32px;
+    padding: 16px 24px;
     font-size: 24px;
     border-radius: 30px;
     word-spacing: 8px;
+    border: none;
+    color: #000;
+    background-color: none;
+    transition: background-color 0.6s ease, color 0.6s ease;
 }
-
-
-
-
-/* .rps {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.3vw;
-    font-weight: 600;
-    margin-bottom: 16px;
-    text-decoration: underline;
-} */
+button:hover {
+    background-color: rgb(231, 36, 36);
+    color: #fff;
+}
